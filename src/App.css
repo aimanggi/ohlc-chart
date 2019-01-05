@@ -1,0 +1,100 @@
+*{
+  margin: 0
+}
+body {
+  background: #ffffff;
+}
+
+header {
+  background-color: rgb(19, 129, 129);
+  margin-bottom: 20px;
+}
+
+header h1 {
+  color: white;
+  text-align: left;
+  padding: 10px 30px;
+  font-size: 24px;
+}
+
+header p {
+  position: relative;
+  top: -40px;
+  color: white;
+  text-align: right;
+  padding: 10px 30px;
+  font-size: 12px;
+}
+
+
+.ohlcChart {
+  text-align: center;
+   position: relative;
+}
+
+.ohlcChart.content {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 30px;
+  min-height: 600px;
+}
+
+
+#chart {
+  background-color: rgba(19, 129, 129, 0.1);
+  z-index: 2;
+}
+
+.labels {
+  position: absolute;
+  left: 25px;
+}
+
+.labels.box {
+  width: 100%;
+  display: inline-flex;
+}
+
+.labels.box button {
+  background-color: transparent;
+  width: 100%;
+  border: 1px solid transparent;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  padding: 20px;
+  text-align: left;
+  margin-bottom: 2px;
+}
+
+.labels.box button:hover{
+  background: rgb(169, 179, 179);
+}
+
+.labels.box button.active {
+  background: rgb(122, 202, 202);
+}
+
+.chart {
+  width: 80%;
+}
+
+.chart.box{
+  position: relative;
+  width: 100%;
+}
+
+.chart.content {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+}
+
+footer {
+  background-color: rgb(19, 129, 129);
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+  padding: 10px 30px;
+  font-size: 12px;
+}
